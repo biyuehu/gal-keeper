@@ -44,7 +44,7 @@ data GameCore = GameCore
     updateDate :: !Int, -- Unix timestamp
     title :: !Text,
     alias :: ![Text],
-    cover :: !Text, -- URL 或本地路径
+    -- cover :: !Text, -- URL 或本地路径
     description :: !Text,
     tags :: ![Text],
     playTimelines :: ![PlayTimeline],
@@ -54,7 +54,7 @@ data GameCore = GameCore
     releaseDate :: !Int,
     rating :: !Double,
     developer :: !Text,
-    images :: ![Text], -- 截图 URL/路径
+    -- images :: ![Text], -- 截图 URL/路径
     links :: ![Link]
   }
   deriving (Show, Eq, Generic, FromJSON, ToJSON)

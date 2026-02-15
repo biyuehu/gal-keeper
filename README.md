@@ -1,4 +1,4 @@
-# SenaVN | GalKeeperv2.X
+# SenaVN | GalKeeper v2.X
 
 A Visual Novel Management System In Terminal.
 
