@@ -1,6 +1,24 @@
 [package]
 name = "SenaVN"
-version = "0.1.0"
-edition = "2024"
+version = "2.0.0"
+description = ""
+authors = ["Arimura Sena"]
+edition = "2021"
+license = "GPL-3.0-or-later"
+
+[[bin]]
+name = "foo"
+path = "src/main.rs"
 
 [dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sysinfo = "0.33"
+roga = "1.0.0"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["winuser"] }
+
+[profile.release]
+opt-level = 3
+strip = true
